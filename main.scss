@@ -1,0 +1,95 @@
+$header-color: #e8e8e8;
+$nav-color:#625261;
+$nav-font-color:white;
+$body-font:'Roboto', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $body-font;
+    background-color: #f1f1f1;
+}
+//header font
+.header {
+    text-align: center;
+    padding: 1px;
+    background-color: $header-color;
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 50px;
+        color: $nav-color;
+    }
+}
+.topnav {
+    overflow: hidden;
+    background-color: $nav-color;
+    a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        font-family: $body-font;
+        text-decoration:none;
+    }
+    .search-container {
+        float: right;
+        input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        button[type=submit] {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background:#a6a6a4;
+            font-size: 17px;
+            color:$nav-font-color;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.topnav a:hover {
+    background-color:#a6a6a4;
+    color:#625261;
+}
+.row {
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+    .rightcolumn {
+        float: right;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: $nav-color;
+    margin-top: 20px;
+    h2 {
+        font-family: $body-font;
+        font-size: 17px;
+        color: $nav-font-color;
+    }
+  }
+  
